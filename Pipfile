@@ -10,3 +10,6 @@ fastapi = {extras = ["all"], version = "*"}
 
 [requires]
 python_version = "3.8"
+
+[scripts]
+server = "uvicorn core.main:app --reload"
