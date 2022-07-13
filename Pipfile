@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 fastapi = {extras = ["all"], version = "*"}
+sqlalchemy = "*"
 
 [dev-packages]
 
@@ -13,3 +14,4 @@ python_version = "3.8"
 
 [scripts]
 server = "uvicorn core.main:app --reload"
+# uvicorn core.main:app --reload --port 7000
