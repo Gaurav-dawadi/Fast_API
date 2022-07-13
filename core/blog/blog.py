@@ -1,6 +1,6 @@
 from typing import Union
 from fastapi import APIRouter
-from .models import BlogModel
+from .blog_model import BlogModel
 
 router = APIRouter(
     prefix="/blog",
