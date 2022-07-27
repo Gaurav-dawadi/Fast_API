@@ -1,9 +1,9 @@
-from ..base_model import Base
-from typing import Union
+from ..base_model import BaseModel
 from sqlalchemy import Column, Integer, String
 
-class User(Base):
+class User(BaseModel):
     __tablename__ ="users"
+    
     first_name = Column(String, index=True)
     last_name = Column(String, index=True)
     username = Column(String, index=True)
@@ -11,4 +11,4 @@ class User(Base):
     password = Column(String, index=True)
 
     def __repr__(self) -> str:
-        return f"User(id={self.id!r}, username={self.username!r})"
+        return f"User(username={self.username!r})"
